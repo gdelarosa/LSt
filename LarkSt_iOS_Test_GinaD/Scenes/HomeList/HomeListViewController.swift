@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeListViewController.swift
 //  LarkSt_iOS_Test_GinaD
 //
 //  Created by Gina De La Rosa on 11/24/18.
@@ -7,14 +7,15 @@
 //
 
 import UIKit
+import SnapKit
 
-class ViewController: UIViewController {
+class HomeListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
 
 
 }
-

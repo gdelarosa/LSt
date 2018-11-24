@@ -8,20 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		77C4324B21AA05D500494D30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4324A21AA05D500494D30 /* AppDelegate.swift */; };
-		77C4324D21AA05D500494D30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4324C21AA05D500494D30 /* ViewController.swift */; };
-		77C4325021AA05D500494D30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77C4324E21AA05D500494D30 /* Main.storyboard */; };
 		77C4325221AA05D700494D30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77C4325121AA05D700494D30 /* Assets.xcassets */; };
 		77C4325521AA05D700494D30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77C4325321AA05D700494D30 /* LaunchScreen.storyboard */; };
+		77C4325D21AA071C00494D30 /* HomeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4325C21AA071C00494D30 /* HomeListModel.swift */; };
+		77C4326321AA0AFB00494D30 /* San-Francisco-Pro-Font in Resources */ = {isa = PBXBuildFile; fileRef = 77C4326221AA0AFA00494D30 /* San-Francisco-Pro-Font */; };
+		77C4326621AA0CA400494D30 /* Stylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4326521AA0CA400494D30 /* Stylesheet.swift */; };
+		77C4326921AA10DA00494D30 /* HomeListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4326821AA10DA00494D30 /* HomeListInteractor.swift */; };
+		77C4326B21AA10E900494D30 /* HomeListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4326A21AA10E900494D30 /* HomeListPresenter.swift */; };
+		77C4326D21AA10F600494D30 /* HomeListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4326C21AA10F600494D30 /* HomeListRouter.swift */; };
+		77C4326F21AA111E00494D30 /* HomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4326E21AA111E00494D30 /* HomeListViewController.swift */; };
+		77C4327121AA113200494D30 /* HomeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4327021AA113200494D30 /* HomeListTableViewCell.swift */; };
+		77C4327321AA11C900494D30 /* HomeListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4327221AA11C900494D30 /* HomeListWorker.swift */; };
+		77C4327721AA17BC00494D30 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C4327621AA17BC00494D30 /* SnapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		77C4324721AA05D500494D30 /* LarkSt_iOS_Test_GinaD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LarkSt_iOS_Test_GinaD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C4324A21AA05D500494D30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		77C4324C21AA05D500494D30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		77C4324F21AA05D500494D30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77C4325121AA05D700494D30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77C4325421AA05D700494D30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77C4325621AA05D700494D30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77C4325C21AA071C00494D30 /* HomeListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeListModel.swift; sourceTree = "<group>"; };
+		77C4326221AA0AFA00494D30 /* San-Francisco-Pro-Font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "San-Francisco-Pro-Font"; sourceTree = "<group>"; };
+		77C4326521AA0CA400494D30 /* Stylesheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stylesheet.swift; sourceTree = "<group>"; };
+		77C4326821AA10DA00494D30 /* HomeListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListInteractor.swift; sourceTree = "<group>"; };
+		77C4326A21AA10E900494D30 /* HomeListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListPresenter.swift; sourceTree = "<group>"; };
+		77C4326C21AA10F600494D30 /* HomeListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListRouter.swift; sourceTree = "<group>"; };
+		77C4326E21AA111E00494D30 /* HomeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListViewController.swift; sourceTree = "<group>"; };
+		77C4327021AA113200494D30 /* HomeListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListTableViewCell.swift; sourceTree = "<group>"; };
+		77C4327221AA11C900494D30 /* HomeListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListWorker.swift; sourceTree = "<group>"; };
+		77C4327621AA17BC00494D30 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77C4327721AA17BC00494D30 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +57,7 @@
 			children = (
 				77C4324921AA05D500494D30 /* LarkSt_iOS_Test_GinaD */,
 				77C4324821AA05D500494D30 /* Products */,
+				77C4327521AA17BC00494D30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +72,61 @@
 		77C4324921AA05D500494D30 /* LarkSt_iOS_Test_GinaD */ = {
 			isa = PBXGroup;
 			children = (
+				77C4326121AA096400494D30 /* Utilities */,
+				77C4326021AA095800494D30 /* Scenes */,
+				77C4325F21AA095400494D30 /* View */,
+				77C4325621AA05D700494D30 /* Info.plist */,
 				77C4324A21AA05D500494D30 /* AppDelegate.swift */,
-				77C4324C21AA05D500494D30 /* ViewController.swift */,
-				77C4324E21AA05D500494D30 /* Main.storyboard */,
 				77C4325121AA05D700494D30 /* Assets.xcassets */,
 				77C4325321AA05D700494D30 /* LaunchScreen.storyboard */,
-				77C4325621AA05D700494D30 /* Info.plist */,
+				77C4326221AA0AFA00494D30 /* San-Francisco-Pro-Font */,
 			);
 			path = LarkSt_iOS_Test_GinaD;
+			sourceTree = "<group>";
+		};
+		77C4325F21AA095400494D30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				77C4327021AA113200494D30 /* HomeListTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		77C4326021AA095800494D30 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				77C4326721AA107300494D30 /* HomeList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		77C4326121AA096400494D30 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				77C4326521AA0CA400494D30 /* Stylesheet.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		77C4326721AA107300494D30 /* HomeList */ = {
+			isa = PBXGroup;
+			children = (
+				77C4326E21AA111E00494D30 /* HomeListViewController.swift */,
+				77C4326821AA10DA00494D30 /* HomeListInteractor.swift */,
+				77C4326A21AA10E900494D30 /* HomeListPresenter.swift */,
+				77C4326C21AA10F600494D30 /* HomeListRouter.swift */,
+				77C4327221AA11C900494D30 /* HomeListWorker.swift */,
+				77C4325C21AA071C00494D30 /* HomeListModel.swift */,
+			);
+			path = HomeList;
+			sourceTree = "<group>";
+		};
+		77C4327521AA17BC00494D30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77C4327621AA17BC00494D30 /* SnapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +139,7 @@
 				77C4324321AA05D500494D30 /* Sources */,
 				77C4324421AA05D500494D30 /* Frameworks */,
 				77C4324521AA05D500494D30 /* Resources */,
+				77C4327821AA17D300494D30 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -124,33 +190,53 @@
 			files = (
 				77C4325521AA05D700494D30 /* LaunchScreen.storyboard in Resources */,
 				77C4325221AA05D700494D30 /* Assets.xcassets in Resources */,
-				77C4325021AA05D500494D30 /* Main.storyboard in Resources */,
+				77C4326321AA0AFB00494D30 /* San-Francisco-Pro-Font in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77C4327821AA17D300494D30 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		77C4324321AA05D500494D30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77C4324D21AA05D500494D30 /* ViewController.swift in Sources */,
+				77C4327121AA113200494D30 /* HomeListTableViewCell.swift in Sources */,
+				77C4326D21AA10F600494D30 /* HomeListRouter.swift in Sources */,
+				77C4326621AA0CA400494D30 /* Stylesheet.swift in Sources */,
+				77C4327321AA11C900494D30 /* HomeListWorker.swift in Sources */,
+				77C4326F21AA111E00494D30 /* HomeListViewController.swift in Sources */,
+				77C4326921AA10DA00494D30 /* HomeListInteractor.swift in Sources */,
+				77C4326B21AA10E900494D30 /* HomeListPresenter.swift in Sources */,
 				77C4324B21AA05D500494D30 /* AppDelegate.swift in Sources */,
+				77C4325D21AA071C00494D30 /* HomeListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		77C4324E21AA05D500494D30 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				77C4324F21AA05D500494D30 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		77C4325321AA05D700494D30 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +370,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A6GUQ7XNWR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LarkSt_iOS_Test_GinaD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -292,7 +382,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ginadlr.LarkSt-iOS-Test-GinaD";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,6 +392,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A6GUQ7XNWR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LarkSt_iOS_Test_GinaD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -310,7 +404,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ginadlr.LarkSt-iOS-Test-GinaD";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
