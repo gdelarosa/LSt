@@ -122,10 +122,18 @@ class HomeListTableViewCell: UITableViewCell {
     
     /// Updates cell information from model
     func updateCell(info: HomeListModel) {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.maximumFractionDigits = 0
+        
+        let result = formatter.string(from: NSNumber(value: info.price))
+        let price = result! + " • "
+        let bedrooms = String(format:"%.0f", info.numberBedrooms) + " Bed • "
+        let bathrooms = String(format:"%.0f", info.numberBathrooms) + " Bath"
         
         addressText.text = info.addressText
         cityText.text = info.city
-        homeDescription.text = "$" + String(format:"%.0f", info.price) + " • " + String(format:"%.0f", info.numberBedrooms) + " Bed • " + String(format:"%.0f", info.numberBathrooms) + " Bath"
+        homeDescription.text = price + bedrooms + bathrooms
 
         let homeImage:UIImage? = setImage[info.imageURL]
 
