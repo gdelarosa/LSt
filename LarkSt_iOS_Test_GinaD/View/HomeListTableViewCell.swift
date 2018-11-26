@@ -13,8 +13,8 @@ class HomeListTableViewCell: UITableViewCell {
     
     // MARK: Properties
      var centerYConstraint: Constraint!
-     let containerViewHeight: CGFloat = 490.0
-     let containerViewWidth: CGFloat = 350
+     let containerViewHeight: CGFloat = 468.0
+     let containerViewWidth: CGFloat = 335
     
     var setImage = [URL: UIImage]()
     
@@ -69,7 +69,7 @@ class HomeListTableViewCell: UITableViewCell {
         text.translatesAutoresizingMaskIntoConstraints = false
         text.textColor = Color.Description.color
         text.font = Font.SFLight.of(size: 11)
-        text.backgroundColor = UIColor.clear
+        text.backgroundColor = Color.Clear.color
         text.text = ""
         text.textAlignment = .center
         text.isScrollEnabled = false
@@ -99,16 +99,16 @@ class HomeListTableViewCell: UITableViewCell {
         let view = UIView()
         view.backgroundColor = Color.White.color
         view.layer.cornerRadius = 20
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOpacity = 0.2
+        view.layer.shadowOffset = CGSize(width: 2, height: 2)
+        view.layer.shadowRadius = 2
         return view;
     }()
     
     let shadowView: UIView = {
         let large = UIView()
         large.backgroundColor = Color.Shadow.color
-        large.layer.shadowColor = UIColor.black.cgColor
-        large.layer.shadowOpacity = 0.8
-        large.layer.shadowOffset = CGSize(width: 5, height: 15)
-        large.layer.shadowRadius = 10
         return large
     }()
     
@@ -177,11 +177,9 @@ class HomeListTableViewCell: UITableViewCell {
         shadowView.snp.makeConstraints { (make) in
             make.topMargin.left.equalTo(10)
             make.right.bottomMargin.equalTo(-30)
-            make.height.equalTo(470)
+            make.height.equalTo(450)
         }
         mainView.snp.makeConstraints { (make) in
-            //make.left.equalTo(self).offset(20).priority(700)
-            //make.right.equalTo(self).offset(-20).priority(700)
             make.centerX.equalTo(self)
             self.centerYConstraint = make.centerY.equalTo(self).constraint
             make.height.equalTo(containerViewHeight)
@@ -191,33 +189,33 @@ class HomeListTableViewCell: UITableViewCell {
             make.right.equalTo(-40)
             make.left.equalTo(40)
             make.width.equalTo(mainView)
-            make.height.equalTo(450)
+            make.height.equalTo(410)
         }
         profileImage.snp.makeConstraints { (make) in
             make.left.equalTo(50)
-            make.bottom.equalTo(-20)
+            make.bottom.equalTo(-40)
             make.width.equalTo(30)
             make.height.equalTo(30)
         }
         commentButton.snp.makeConstraints { (make) in
             make.left.equalTo(69)
-            make.bottom.equalTo(-15)
+            make.bottom.equalTo(-35)
         }
         cityText.snp.makeConstraints { (make) in
             make.right.equalTo(-50)
-            make.bottom.equalTo(-70)
+            make.bottom.equalTo(-100)
         }
         addressText.snp.makeConstraints { (make) in
             make.left.equalTo(90)
-            make.bottom.equalTo(-25)
+            make.bottom.equalTo(-45)
         }
         isRentalImageView.snp.makeConstraints { (make) in
             make.left.equalTo(95)
-            make.bottom.equalTo(-20)
+            make.bottom.equalTo(-40)
         }
         homeDescription.snp.makeConstraints { (make) in
             make.left.equalTo(100)
-            make.bottom.equalTo(-10)
+            make.bottom.equalTo(-30)
         }
     }
     

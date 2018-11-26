@@ -12,6 +12,7 @@ enum Color {
     case Black
     case Description
     case White
+    case Clear
     case Background
     case Shadow
     
@@ -23,6 +24,8 @@ enum Color {
             return UIColor(red:0.00, green:0.00, blue:0.00, alpha:0.8)
         case .White:
             return UIColor.white
+        case .Clear:
+            return UIColor.clear
         case .Background:
             return UIColor(red:0.96, green:0.96, blue:0.96, alpha:1.0)
         case .Shadow:
