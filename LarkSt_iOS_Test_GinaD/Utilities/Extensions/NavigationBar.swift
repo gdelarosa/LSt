@@ -9,7 +9,6 @@
 import UIKit
 
 extension UIViewController {
-    
     /// Navigation View Setup
     func navigationBarView() {
         

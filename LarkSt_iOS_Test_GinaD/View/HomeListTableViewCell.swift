@@ -12,6 +12,9 @@ import SnapKit
 class HomeListTableViewCell: UITableViewCell {
     
     // MARK: Properties
+     var centerYConstraint: Constraint!
+     let containerViewHeight: CGFloat = 490.0
+     let containerViewWidth: CGFloat = 350
     
     var setImage = [URL: UIImage]()
     
@@ -78,7 +81,7 @@ class HomeListTableViewCell: UITableViewCell {
     let cityText: UITextView = {
         let text = UITextView()
         text.translatesAutoresizingMaskIntoConstraints = false;
-        text.textColor = Color.City.color
+        text.textColor = Color.White.color
         text.font = Font.SFLight.of(size: 11)
         text.text = ""
         text.backgroundColor = Color.Black.color
@@ -94,15 +97,15 @@ class HomeListTableViewCell: UITableViewCell {
     
     let mainView: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor.white
+        view.backgroundColor = Color.White.color
         view.layer.cornerRadius = 20
         return view;
     }()
     
     let shadowView: UIView = {
         let large = UIView()
-        large.backgroundColor = Color.Background.color
-        large.layer.shadowColor = UIColor.gray.cgColor
+        large.backgroundColor = Color.Shadow.color
+        large.layer.shadowColor = UIColor.black.cgColor
         large.layer.shadowOpacity = 0.8
         large.layer.shadowOffset = CGSize(width: 5, height: 15)
         large.layer.shadowRadius = 10
@@ -172,49 +175,48 @@ class HomeListTableViewCell: UITableViewCell {
         addSubview(isRentalImageView)
         
         shadowView.snp.makeConstraints { (make) in
-            make.topMargin.left.equalTo(20)
+            make.topMargin.left.equalTo(10)
             make.right.bottomMargin.equalTo(-30)
             make.height.equalTo(470)
         }
         mainView.snp.makeConstraints { (make) in
-           make.topMargin.left.equalTo(20)
-           make.right.bottomMargin.equalTo(-20)
-           make.height.equalTo(490)
+            //make.left.equalTo(self).offset(20).priority(700)
+            //make.right.equalTo(self).offset(-20).priority(700)
+            make.centerX.equalTo(self)
+            self.centerYConstraint = make.centerY.equalTo(self).constraint
+            make.height.equalTo(containerViewHeight)
         }
-        homeImage.snp.makeConstraints {
-            (make) in
-            make.left.equalTo(20)
-            make.right.equalTo(-20)
-            make.height.equalTo(468)
+        homeImage.snp.makeConstraints { (make) in
+            make.top.equalTo(mainView)
+            make.right.equalTo(-40)
+            make.left.equalTo(40)
+            make.width.equalTo(mainView)
+            make.height.equalTo(450)
         }
         profileImage.snp.makeConstraints { (make) in
-            make.left.equalTo(30)
+            make.left.equalTo(50)
             make.bottom.equalTo(-20)
             make.width.equalTo(30)
             make.height.equalTo(30)
         }
         commentButton.snp.makeConstraints { (make) in
-            make.left.equalTo(49)
+            make.left.equalTo(69)
             make.bottom.equalTo(-15)
         }
-        cityText.snp.makeConstraints {
-            (make) in
-            make.right.equalTo(-30)
+        cityText.snp.makeConstraints { (make) in
+            make.right.equalTo(-50)
             make.bottom.equalTo(-70)
         }
-        addressText.snp.makeConstraints {
-            (make) in
-            make.left.equalTo(70)
+        addressText.snp.makeConstraints { (make) in
+            make.left.equalTo(90)
             make.bottom.equalTo(-25)
         }
-        isRentalImageView.snp.makeConstraints {
-            (make) in
-            make.left.equalTo(75)
+        isRentalImageView.snp.makeConstraints { (make) in
+            make.left.equalTo(95)
             make.bottom.equalTo(-20)
         }
-        homeDescription.snp.makeConstraints {
-            (make) in
-            make.left.equalTo(80)
+        homeDescription.snp.makeConstraints { (make) in
+            make.left.equalTo(100)
             make.bottom.equalTo(-10)
         }
     }

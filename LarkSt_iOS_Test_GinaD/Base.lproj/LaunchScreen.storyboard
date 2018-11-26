@@ -27,7 +27,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lark St. " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bz0-2j-UlN">
-                                <rect key="frame" x="98" y="308" width="179" height="21"/>
+                                <rect key="frame" x="84.5" y="308" width="206" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="it9-hU-rge"/>
                                 </constraints>
@@ -36,7 +36,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS UI Challenge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4n-3r-AeD">
-                                <rect key="frame" x="98" y="337" width="179" height="21"/>
+                                <rect key="frame" x="84.5" y="337" width="206" height="21"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -45,12 +45,12 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bz0-2j-UlN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="3Rp-G4-aye"/>
-                            <constraint firstItem="bz0-2j-UlN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="98" id="E5c-sK-Xi1"/>
                             <constraint firstItem="bz0-2j-UlN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="288" id="K4v-VG-vuj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M4n-3r-AeD" secondAttribute="bottom" constant="309" id="OWM-VT-Whv"/>
+                            <constraint firstItem="M4n-3r-AeD" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="SgL-Dq-rT0"/>
                             <constraint firstItem="M4n-3r-AeD" firstAttribute="top" secondItem="bz0-2j-UlN" secondAttribute="bottom" constant="8" symbolic="YES" id="gwj-5v-Hii"/>
-                            <constraint firstItem="bz0-2j-UlN" firstAttribute="leading" secondItem="M4n-3r-AeD" secondAttribute="leading" id="mkp-F7-z5A"/>
-                            <constraint firstItem="bz0-2j-UlN" firstAttribute="trailing" secondItem="M4n-3r-AeD" secondAttribute="trailing" id="qPL-We-KUA"/>
+                            <constraint firstItem="M4n-3r-AeD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="84.5" id="kzS-UK-4OQ"/>
+                            <constraint firstItem="bz0-2j-UlN" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="M4n-3r-AeD" secondAttribute="trailing" id="qPL-We-KUA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

@@ -11,8 +11,9 @@ import UIKit
 enum Color {
     case Black
     case Description
-    case City
+    case White
     case Background
+    case Shadow
     
     var color: UIColor {
         switch self {
@@ -20,10 +21,12 @@ enum Color {
             return UIColor.black
         case .Description:
             return UIColor(red:0.00, green:0.00, blue:0.00, alpha:0.8)
-        case .City:
+        case .White:
             return UIColor.white
         case .Background:
             return UIColor(red:0.96, green:0.96, blue:0.96, alpha:1.0)
+        case .Shadow:
+            return UIColor(red:0.96, green:0.96, blue:0.96, alpha:0.1)
         }
     }
 }
