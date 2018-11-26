@@ -9,7 +9,6 @@
 import UIKit
 
 extension UIButton {
-    
     func setCornerRadius(amount: CGFloat) {
         self.layer.cornerRadius = amount
         self.layer.masksToBounds = true

@@ -37,7 +37,7 @@ class HomeListViewController: UIViewController, UITableViewDataSource, UITableVi
         navBar!.view.backgroundColor = .clear
         self.view.addSubview(navBarImage)
         navBarImage.snp.makeConstraints { (make) in
-            make.top.equalTo(0)
+            make.top.equalTo(-8)
             make.height.equalTo(100)
             make.width.equalTo(400)
         }
@@ -47,10 +47,15 @@ class HomeListViewController: UIViewController, UITableViewDataSource, UITableVi
     private func setupTableView() {
         mainTableView.showsVerticalScrollIndicator = false
         mainTableView.register(HomeListTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+        
         view.addSubview(mainTableView)
+        
         mainTableView.snp.makeConstraints { (make) in
             make.edges.equalTo(self.view)
         }
+        
+        mainTableView.contentInset = UIEdgeInsets(top: 20,left: 0,bottom: 0,right: 0)
+        
         mainTableView.dataSource = self
         mainTableView.delegate = self
         mainTableView.separatorColor = UIColor.clear

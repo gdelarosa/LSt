@@ -20,8 +20,8 @@ extension UIViewController {
         let leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "iconNavigationCreatePost.png"), style: .plain, target: self, action: #selector(HomeListViewController.clickCreatePost))
         self.navigationItem.leftBarButtonItem  = leftBarButtonItem
         
-        let viewFN = UIView(frame: CGRect.init(x: 0, y: 0, width: 20, height: 40))
-        let rightButton = UIButton(frame: CGRect.init(x: -20, y: 10, width: 30, height: 30))
+        let viewFN = UIView(frame: CGRect.init(x: 0, y: 0, width: 20, height: 50))
+        let rightButton = UIButton(frame: CGRect.init(x: -20, y: 7, width: 30, height: 30))
         rightButton.setImage(UIImage(named: "avatarUserpicJinYang.png"), for: UIControl.State.normal)
         rightButton.setCornerRadius(amount: 0.5 * rightButton.bounds.size.width)
         

@@ -124,10 +124,8 @@ class HomeListTableViewCell: UITableViewCell {
     func updateCell(info: HomeListModel) {
         
         addressText.text = info.addressText
-
-        homeDescription.text = "$" + String(format:"%.0f", info.price) + " • " + String(format:"%.0f", info.numberBedrooms) + " Bed • " + String(format:"%.0f", info.numberBathrooms) + " Bath"
-
         cityText.text = info.city
+        homeDescription.text = "$" + String(format:"%.0f", info.price) + " • " + String(format:"%.0f", info.numberBedrooms) + " Bed • " + String(format:"%.0f", info.numberBathrooms) + " Bath"
 
         let homeImage:UIImage? = setImage[info.imageURL]
 
