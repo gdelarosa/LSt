@@ -26,7 +26,6 @@ class HomeListViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         listings = HomeListModel.getTestFeed()
-        mainTableView.register(HomeListTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         setupTableView()
         navigationBarView()
         setupNavImage()
@@ -46,6 +45,8 @@ class HomeListViewController: UIViewController, UITableViewDataSource, UITableVi
     
     /// TableView Setup
     private func setupTableView() {
+        mainTableView.showsVerticalScrollIndicator = false
+        mainTableView.register(HomeListTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         view.addSubview(mainTableView)
         mainTableView.snp.makeConstraints { (make) in
             make.edges.equalTo(self.view)

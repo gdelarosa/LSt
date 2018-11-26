@@ -102,7 +102,7 @@ class HomeListTableViewCell: UITableViewCell {
     let shadowView: UIView = {
         let large = UIView()
         large.backgroundColor = Color.Background.color
-        large.layer.shadowColor = UIColor.black.cgColor
+        large.layer.shadowColor = UIColor.gray.cgColor
         large.layer.shadowOpacity = 0.8
         large.layer.shadowOffset = CGSize(width: 5, height: 15)
         large.layer.shadowRadius = 10
@@ -152,13 +152,6 @@ class HomeListTableViewCell: UITableViewCell {
         }
         
     }
-    
-//    /// Button Actions
-//    func setButtonAction() {
-//        commentButton.addTarget(self, action: #selector(HomeListViewController.clickToComment), for: .touchUpInside)
-//        profileImage.addTarget(self, action: #selector(HomeListViewController.clickProfile), for: .touchUpInside)
-//        homeImage.addTarget(self, action: #selector(HomeListViewController.clickImage), for: .touchUpInside)
-//    }
 
     /// View setup with constraints
     func setupContainerView() {
