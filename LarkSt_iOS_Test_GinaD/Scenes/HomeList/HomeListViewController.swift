@@ -32,7 +32,7 @@ class HomeListViewController: UIViewController, UITableViewDataSource, UITableVi
         setupNavImage()
     }
     
-    /// Navigation Bar Setup
+    /// Navigation Bar Image Setup
     private func setupNavImage() {
         let navBar = navigationController
         navBar!.view.backgroundColor = .clear
@@ -84,8 +84,14 @@ extension HomeListViewController {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! HomeListTableViewCell
         cell.updateCell(info: listings[indexPath.row])
+        
+        cell.profileImage.addTarget(self, action: #selector(self.clickProfile), for: .touchUpInside)
+        cell.homeImage.addTarget(self, action: #selector(self.clickImage), for: .touchUpInside)
+        cell.commentButton.addTarget(self, action: #selector(self.clickToComment), for: .touchUpInside)
+        
         return cell
     }
     

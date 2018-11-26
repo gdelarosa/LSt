@@ -16,12 +16,12 @@ class HomeListTableViewCell: UITableViewCell {
     var setImage = [URL: UIImage]()
     
     let profileImage: UIButton = {
-        let iv = UIButton()
-        iv.setImage(#imageLiteral(resourceName: "avatarSmallListingAgent"), for: .normal)
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        iv.contentMode = .scaleAspectFill
-        iv.setCornerRadius(amount: 20)
-        return iv
+        let userImage = UIButton()
+        userImage.setImage(#imageLiteral(resourceName: "avatarSmallListingAgent"), for: .normal)
+        userImage.translatesAutoresizingMaskIntoConstraints = false
+        userImage.contentMode = .scaleAspectFill
+        userImage.setCornerRadius(amount: 20)
+        return userImage
     }()
     
     var homeImage: UIButton = {
@@ -121,7 +121,6 @@ class HomeListTableViewCell: UITableViewCell {
     }
     
     /// Updates cell information from model
-    
     func updateCell(info: HomeListModel) {
         
         addressText.text = info.addressText
@@ -154,15 +153,14 @@ class HomeListTableViewCell: UITableViewCell {
         
     }
     
-    /// Button Actions
-    func setButtonAction() {
-        commentButton.addTarget(self, action: #selector(HomeListViewController.clickToComment), for: .touchUpInside)
-        profileImage.addTarget(self, action: #selector(HomeListViewController.clickProfile), for: .touchUpInside)
-        homeImage.addTarget(self, action: #selector(HomeListViewController.clickImage), for: .touchUpInside)
-    }
+//    /// Button Actions
+//    func setButtonAction() {
+//        commentButton.addTarget(self, action: #selector(HomeListViewController.clickToComment), for: .touchUpInside)
+//        profileImage.addTarget(self, action: #selector(HomeListViewController.clickProfile), for: .touchUpInside)
+//        homeImage.addTarget(self, action: #selector(HomeListViewController.clickImage), for: .touchUpInside)
+//    }
 
     /// View setup with constraints
-
     func setupContainerView() {
         addSubview(shadowView)
         addSubview(mainView)
@@ -223,7 +221,6 @@ class HomeListTableViewCell: UITableViewCell {
     }
     
     ///Downloads Image Data
-    
     func downloadImage(url: URL, profile: Bool) {
         let router = HomeListRouter()
         router.getData(url: url) { data, response, error in
