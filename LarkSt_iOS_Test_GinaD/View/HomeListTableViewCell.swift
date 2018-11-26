@@ -16,11 +16,11 @@ class HomeListTableViewCell: UITableViewCell {
     var setImage = [URL: UIImage]()
     
     let profileImage: UIButton = {
-        let userImage = UIButton()
+        let userImage = UIButton(frame: CGRect.init(x: -20, y: 7, width: 30, height: 30))
         userImage.setImage(#imageLiteral(resourceName: "avatarSmallListingAgent"), for: .normal)
         userImage.translatesAutoresizingMaskIntoConstraints = false
         userImage.contentMode = .scaleAspectFill
-        userImage.setCornerRadius(amount: 20)
+        userImage.setCornerRadius(amount: 0.5 * userImage.bounds.size.width)
         return userImage
     }()
     
