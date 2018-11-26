@@ -11,15 +11,16 @@
 		77C4325221AA05D700494D30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77C4325121AA05D700494D30 /* Assets.xcassets */; };
 		77C4325521AA05D700494D30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77C4325321AA05D700494D30 /* LaunchScreen.storyboard */; };
 		77C4325D21AA071C00494D30 /* HomeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4325C21AA071C00494D30 /* HomeListModel.swift */; };
-		77C4326321AA0AFB00494D30 /* San-Francisco-Pro-Font in Resources */ = {isa = PBXBuildFile; fileRef = 77C4326221AA0AFA00494D30 /* San-Francisco-Pro-Font */; };
-		77C4326621AA0CA400494D30 /* Stylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4326521AA0CA400494D30 /* Stylesheet.swift */; };
-		77C4326921AA10DA00494D30 /* HomeListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4326821AA10DA00494D30 /* HomeListInteractor.swift */; };
-		77C4326B21AA10E900494D30 /* HomeListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4326A21AA10E900494D30 /* HomeListPresenter.swift */; };
-		77C4326D21AA10F600494D30 /* HomeListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4326C21AA10F600494D30 /* HomeListRouter.swift */; };
+		77C4326621AA0CA400494D30 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4326521AA0CA400494D30 /* Colors.swift */; };
 		77C4326F21AA111E00494D30 /* HomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4326E21AA111E00494D30 /* HomeListViewController.swift */; };
 		77C4327121AA113200494D30 /* HomeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4327021AA113200494D30 /* HomeListTableViewCell.swift */; };
-		77C4327321AA11C900494D30 /* HomeListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4327221AA11C900494D30 /* HomeListWorker.swift */; };
 		77C4327721AA17BC00494D30 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C4327621AA17BC00494D30 /* SnapKit.framework */; };
+		77C4328721AA366B00494D30 /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77C4328621AA366000494D30 /* SF-Pro-Display-Light.otf */; };
+		77C4328821AA366D00494D30 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77C4328521AA365B00494D30 /* SF-Pro-Display-Regular.otf */; };
+		77C4328C21AA53C400494D30 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4328B21AA53C400494D30 /* NavigationBar.swift */; };
+		77C4329021AA5E4200494D30 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4328F21AA5E4200494D30 /* Fonts.swift */; };
+		77C4329821AB325A00494D30 /* HomeListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4329721AB325A00494D30 /* HomeListRouter.swift */; };
+		77C4329A21AB5C4B00494D30 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4329921AB5C4B00494D30 /* UIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,15 +30,16 @@
 		77C4325421AA05D700494D30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77C4325621AA05D700494D30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77C4325C21AA071C00494D30 /* HomeListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeListModel.swift; sourceTree = "<group>"; };
-		77C4326221AA0AFA00494D30 /* San-Francisco-Pro-Font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "San-Francisco-Pro-Font"; sourceTree = "<group>"; };
-		77C4326521AA0CA400494D30 /* Stylesheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stylesheet.swift; sourceTree = "<group>"; };
-		77C4326821AA10DA00494D30 /* HomeListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListInteractor.swift; sourceTree = "<group>"; };
-		77C4326A21AA10E900494D30 /* HomeListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListPresenter.swift; sourceTree = "<group>"; };
-		77C4326C21AA10F600494D30 /* HomeListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListRouter.swift; sourceTree = "<group>"; };
+		77C4326521AA0CA400494D30 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		77C4326E21AA111E00494D30 /* HomeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListViewController.swift; sourceTree = "<group>"; };
 		77C4327021AA113200494D30 /* HomeListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListTableViewCell.swift; sourceTree = "<group>"; };
-		77C4327221AA11C900494D30 /* HomeListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListWorker.swift; sourceTree = "<group>"; };
 		77C4327621AA17BC00494D30 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		77C4328521AA365B00494D30 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		77C4328621AA366000494D30 /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
+		77C4328B21AA53C400494D30 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		77C4328F21AA5E4200494D30 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		77C4329721AB325A00494D30 /* HomeListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListRouter.swift; sourceTree = "<group>"; };
+		77C4329921AB5C4B00494D30 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,10 +78,8 @@
 				77C4326021AA095800494D30 /* Scenes */,
 				77C4325F21AA095400494D30 /* View */,
 				77C4325621AA05D700494D30 /* Info.plist */,
-				77C4324A21AA05D500494D30 /* AppDelegate.swift */,
 				77C4325121AA05D700494D30 /* Assets.xcassets */,
 				77C4325321AA05D700494D30 /* LaunchScreen.storyboard */,
-				77C4326221AA0AFA00494D30 /* San-Francisco-Pro-Font */,
 			);
 			path = LarkSt_iOS_Test_GinaD;
 			sourceTree = "<group>";
@@ -103,7 +103,11 @@
 		77C4326121AA096400494D30 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				77C4326521AA0CA400494D30 /* Stylesheet.swift */,
+				77C4324A21AA05D500494D30 /* AppDelegate.swift */,
+				77C4329221AA5E8100494D30 /* Fonts */,
+				77C4329121AA5E6000494D30 /* Extensions */,
+				77C4326521AA0CA400494D30 /* Colors.swift */,
+				77C4328F21AA5E4200494D30 /* Fonts.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -112,11 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				77C4326E21AA111E00494D30 /* HomeListViewController.swift */,
-				77C4326821AA10DA00494D30 /* HomeListInteractor.swift */,
-				77C4326A21AA10E900494D30 /* HomeListPresenter.swift */,
-				77C4326C21AA10F600494D30 /* HomeListRouter.swift */,
-				77C4327221AA11C900494D30 /* HomeListWorker.swift */,
 				77C4325C21AA071C00494D30 /* HomeListModel.swift */,
+				77C4329721AB325A00494D30 /* HomeListRouter.swift */,
 			);
 			path = HomeList;
 			sourceTree = "<group>";
@@ -127,6 +128,24 @@
 				77C4327621AA17BC00494D30 /* SnapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77C4329121AA5E6000494D30 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				77C4328B21AA53C400494D30 /* NavigationBar.swift */,
+				77C4329921AB5C4B00494D30 /* UIButton.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		77C4329221AA5E8100494D30 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				77C4328521AA365B00494D30 /* SF-Pro-Display-Regular.otf */,
+				77C4328621AA366000494D30 /* SF-Pro-Display-Light.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,8 +208,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				77C4325521AA05D700494D30 /* LaunchScreen.storyboard in Resources */,
+				77C4328721AA366B00494D30 /* SF-Pro-Display-Light.otf in Resources */,
+				77C4328821AA366D00494D30 /* SF-Pro-Display-Regular.otf in Resources */,
 				77C4325221AA05D700494D30 /* Assets.xcassets in Resources */,
-				77C4326321AA0AFB00494D30 /* San-Francisco-Pro-Font in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,12 +243,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				77C4327121AA113200494D30 /* HomeListTableViewCell.swift in Sources */,
-				77C4326D21AA10F600494D30 /* HomeListRouter.swift in Sources */,
-				77C4326621AA0CA400494D30 /* Stylesheet.swift in Sources */,
-				77C4327321AA11C900494D30 /* HomeListWorker.swift in Sources */,
+				77C4329821AB325A00494D30 /* HomeListRouter.swift in Sources */,
+				77C4329A21AB5C4B00494D30 /* UIButton.swift in Sources */,
+				77C4326621AA0CA400494D30 /* Colors.swift in Sources */,
+				77C4328C21AA53C400494D30 /* NavigationBar.swift in Sources */,
 				77C4326F21AA111E00494D30 /* HomeListViewController.swift in Sources */,
-				77C4326921AA10DA00494D30 /* HomeListInteractor.swift in Sources */,
-				77C4326B21AA10E900494D30 /* HomeListPresenter.swift in Sources */,
+				77C4329021AA5E4200494D30 /* Fonts.swift in Sources */,
 				77C4324B21AA05D500494D30 /* AppDelegate.swift in Sources */,
 				77C4325D21AA071C00494D30 /* HomeListModel.swift in Sources */,
 			);

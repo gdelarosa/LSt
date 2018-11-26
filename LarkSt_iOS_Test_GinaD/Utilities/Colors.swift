@@ -2,26 +2,23 @@
 //  Stylesheet.swift
 //  LarkSt_iOS_Test_GinaD
 //
-//  Created by Gina De La Rosa on 11/24/18.
+//  Created by Gina De La Rosa on 11/25/18.
 //  Copyright © 2018 Gina De La Rosa. All rights reserved.
 //
 
 import UIKit
 
 enum Color {
-    case Heading
-    case Address
-    case Price
+    case Black
+    case Description
     case City
     case Background
     
     var color: UIColor {
         switch self {
-        case .Heading:
+        case .Black:
             return UIColor.black
-        case .Address:
-            return UIColor.black
-        case .Price:
+        case .Description:
             return UIColor(red:0.00, green:0.00, blue:0.00, alpha:0.8)
         case .City:
             return UIColor.white
@@ -31,11 +28,3 @@ enum Color {
     }
 }
 
-enum Font: String {
-    case SFRegular = ".SF-Pro-Display-Regular"
-    case SFLight = ".SF-Pro-Display-Light"
-    
-    func font(size: CGFloat) -> UIFont {
-        return UIFont(name: rawValue, size: size)!
-    }
-}
