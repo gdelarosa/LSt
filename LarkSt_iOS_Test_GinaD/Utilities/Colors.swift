@@ -10,7 +10,7 @@ import UIKit
 
 enum Color {
     case Black
-    case Description
+    case BlackOp
     case White
     case Clear
     case Background
@@ -20,7 +20,7 @@ enum Color {
         switch self {
         case .Black:
             return UIColor.black
-        case .Description:
+        case .BlackOp:
             return UIColor(red:0.00, green:0.00, blue:0.00, alpha:0.8)
         case .White:
             return UIColor.white

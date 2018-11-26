@@ -67,7 +67,7 @@ class HomeListTableViewCell: UITableViewCell {
     let homeDescription: UITextView = {
         let text = UITextView()
         text.translatesAutoresizingMaskIntoConstraints = false
-        text.textColor = Color.Description.color
+        text.textColor = Color.BlackOp.color
         text.font = Font.SFLight.of(size: 11)
         text.backgroundColor = Color.Clear.color
         text.text = ""
@@ -78,19 +78,16 @@ class HomeListTableViewCell: UITableViewCell {
         return text;
     }()
     
-    let cityText: UITextView = {
-        let text = UITextView()
-        text.translatesAutoresizingMaskIntoConstraints = false;
+    let cityText: UILabel = {
+        var text = UILabel()
+        text.translatesAutoresizingMaskIntoConstraints = false
         text.textColor = Color.White.color
         text.font = Font.SFLight.of(size: 11)
-        text.text = ""
-        text.backgroundColor = Color.Black.color
-        text.backgroundColor?.withAlphaComponent(0.5)
-        text.layer.cornerRadius = 10
-        text.clipsToBounds = true
+        text.text = " "
+        text.backgroundColor = Color.BlackOp.color
+        text.layer.cornerRadius = 7.5
+        text.layer.masksToBounds = true
         text.textAlignment = .center
-        text.isScrollEnabled = false
-        text.isEditable = false
         
         return text;
     }()
@@ -106,7 +103,7 @@ class HomeListTableViewCell: UITableViewCell {
         return view;
     }()
     
-    let shadowView: UIView = {
+    let subView: UIView = {
         let large = UIView()
         large.backgroundColor = Color.Shadow.color
         return large
@@ -135,7 +132,8 @@ class HomeListTableViewCell: UITableViewCell {
         let bathrooms = String(format:"%.0f", info.numberBathrooms) + " Bath"
         
         addressText.text = info.addressText
-        cityText.text = info.city
+        let leftSpaces = String(repeating: " ", count: 5)
+        cityText.text =  "\(info.city)     " + leftSpaces
         homeDescription.text = price + bedrooms + bathrooms
 
         let homeImage:UIImage? = setImage[info.imageURL]
@@ -164,7 +162,7 @@ class HomeListTableViewCell: UITableViewCell {
 
     /// View setup with constraints
     func setupContainerView() {
-        addSubview(shadowView)
+        addSubview(subView)
         addSubview(mainView)
         addSubview(addressText)
         addSubview(profileImage)
@@ -174,7 +172,7 @@ class HomeListTableViewCell: UITableViewCell {
         addSubview(homeDescription)
         addSubview(isRentalImageView)
         
-        shadowView.snp.makeConstraints { (make) in
+        subView.snp.makeConstraints { (make) in
             make.topMargin.left.equalTo(10)
             make.right.bottomMargin.equalTo(-30)
             make.height.equalTo(450)
@@ -193,29 +191,29 @@ class HomeListTableViewCell: UITableViewCell {
         }
         profileImage.snp.makeConstraints { (make) in
             make.left.equalTo(50)
-            make.bottom.equalTo(-40)
+            make.bottom.equalTo(-30)
             make.width.equalTo(30)
             make.height.equalTo(30)
         }
         commentButton.snp.makeConstraints { (make) in
             make.left.equalTo(69)
-            make.bottom.equalTo(-35)
+            make.bottom.equalTo(-25)
         }
         cityText.snp.makeConstraints { (make) in
             make.right.equalTo(-50)
-            make.bottom.equalTo(-100)
+            make.bottom.equalTo(-80)
         }
         addressText.snp.makeConstraints { (make) in
             make.left.equalTo(90)
-            make.bottom.equalTo(-45)
+            make.bottom.equalTo(-35)
         }
         isRentalImageView.snp.makeConstraints { (make) in
             make.left.equalTo(95)
-            make.bottom.equalTo(-40)
+            make.bottom.equalTo(-30)
         }
         homeDescription.snp.makeConstraints { (make) in
             make.left.equalTo(100)
-            make.bottom.equalTo(-30)
+            make.bottom.equalTo(-20)
         }
     }
     
