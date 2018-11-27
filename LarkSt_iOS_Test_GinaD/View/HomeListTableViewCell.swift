@@ -12,9 +12,9 @@ import SnapKit
 class HomeListTableViewCell: UITableViewCell {
     
     // MARK: Properties
-     var centerYConstraint: Constraint!
-     let containerViewHeight: CGFloat = 468.0
-     let containerViewWidth: CGFloat = 335
+    
+    var centerYConstraint: Constraint!
+    let containerViewHeight: CGFloat = 468.0
     
     var setImage = [URL: UIImage]()
     
@@ -120,6 +120,8 @@ class HomeListTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: Cell Update with Data
+    
     /// Updates cell information from model
     func updateCell(info: HomeListModel) {
         let formatter = NumberFormatter()
@@ -159,6 +161,8 @@ class HomeListTableViewCell: UITableViewCell {
         }
         
     }
+    
+    // MARK: Auto Layout
 
     /// View setup with constraints
     func setupContainerView() {
@@ -216,6 +220,8 @@ class HomeListTableViewCell: UITableViewCell {
             make.bottom.equalTo(-20)
         }
     }
+    
+    // MARK: Image Download
     
     ///Downloads Image Data
     func downloadImage(url: URL, profile: Bool) {
