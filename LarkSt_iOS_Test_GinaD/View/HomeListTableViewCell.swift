@@ -188,8 +188,8 @@ class HomeListTableViewCell: UITableViewCell {
         }
         homeImage.snp.makeConstraints { (make) in
             make.top.equalTo(mainView)
-            make.right.equalTo(-40)
-            make.left.equalTo(40)
+            make.right.equalTo(-20)
+            make.left.equalTo(20)
             make.width.equalTo(mainView)
             make.height.equalTo(410)
         }
